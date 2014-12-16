@@ -17,7 +17,7 @@
     var image_urls = []
     
     $.each(data.feed.entries, function(i, val) {
-      var image_urls.push(/http.+.gif/.exec(val.content)[0])
+      image_urls.push(/http.+.gif/.exec(val.content)[0])
     }
 
     var i = 0
