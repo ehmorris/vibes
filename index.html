@@ -21,11 +21,10 @@
     })
 
     var i = 0
-    while (i < image_urls.length) {
-      window.setTimeout(function() {
-        $('body').css('background-image', image_urls[0])
-        i++
-      }, 2000)
-    }
+    loop_images = window.setInterval(function() {
+      if (i >= image_urls.length) window.clearInterval(loop_images)
+      $('body').css('background-image', image_urls[0])
+      i++
+    }, 2000)
   })
 </script>
