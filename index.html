@@ -16,7 +16,7 @@
   feed.load(function (data) {
     $.each(data.feed.entries, function(i, val) {
       window.setTimeout(function() {
-        image_url = /http.+.gif/.exec(val)[0]
+        var image_url = /http.+.gif/.exec(val)[0]
         $('body').css('background-image', image_url)
       }, 2000)
     })
