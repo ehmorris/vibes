@@ -22,7 +22,10 @@
 
     var i = 0
     loop_images = window.setInterval(function() {
-      if (i >= image_urls.length) window.clearInterval(loop_images)
+      if (i >= image_urls.length) {
+        window.clearInterval(loop_images)
+        $('body').removeAttr('style')
+      }
       $('body').css('background-image', "url("+image_urls[i]+")")
       i++
     }, 2000)
