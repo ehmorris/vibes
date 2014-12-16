@@ -3,3 +3,13 @@
     background: -webkit-linear-gradient(#E7A71C, #FFDE96);
   }
 </style>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load('feeds', '1');</script>
+
+<script type="text/javascript">
+  var feed = new google.feeds.Feed('http://all-horizons.tumblr.com/rss')
+  feed.load(function (data) {
+      console.dir(data)
+  })
+</script>
