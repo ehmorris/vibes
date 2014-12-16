@@ -18,7 +18,7 @@
     
     $.each(data.feed.entries, function(i, val) {
       image_urls.push(/http.+.gif/.exec(val.content)[0])
-    }
+    })
 
     var i = 0
     while (i < image_urls.length) {
