@@ -10,6 +10,6 @@
 <script type="text/javascript">
   var feed = new google.feeds.Feed('http://all-horizons.tumblr.com/rss')
   feed.load(function (data) {
-      console.dir(data)
+      console.dir(data.feed.entries)
   })
 </script>
