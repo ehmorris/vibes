@@ -1,4 +1,3 @@
-vibes
-=====
+Ambient colors for a screen — like a picture but more interesting.
 
-just something to put on the big screen in my office :)
+Cycles between recent gifs from http://all-horizons.tumblr.com and still gradients.
